@@ -1,0 +1,45 @@
+emailConfiguraton: &email
+
+  # Indicates that the SMTP email configuration is available for use by FusionAuth.
+  enabled: false
+
+  # The host name of the SMTP server that FusionAuth will use. Required when
+  # systemConfiguration.emailConfiguration.enabled is set to true.
+  host: null
+
+  # The port of the SMTP server that FusionAuth will use. Required when
+  # systemConfiguration.emailConfiguration.enabled is set to true.
+  port: null
+
+  # An optional username FusionAuth will to authenticate with the SMTP server.
+  username: null
+
+  # An optional password FusionAuth will use to authenticate with the SMTP server.
+  password: null
+
+  # The type of security protocol FusionAuth will use when connecting to the SMTP server. The possible values are:
+  # 
+  # NONE - no security will be used. All communications will be sent plaintext.
+  # SSL - SSL will be used to connect to the SMTP server. This protocol is not recommended unless it is the only one your SMTP server supports.
+  # TLS - TLS will be used to connect to the SMTP server. This is the preferred protocol for all SMTP servers.
+  security: NONE
+
+  # Whether or not user’s email addresses are verified when the register with your application.
+  verifyEmail: false
+
+  # Whether or not user’s email addresses are verified when the user changes them.
+  verifyEmailWhenChanged: false
+
+  # The Id of the Email Template that is used when a user is sent a forgot password email.
+  forgotPasswordEmailTemplateId: *passwordResetEmail
+
+  # The Id of the Email Template that is used when a user had their account created for
+  # them and they must set their password manually and they are sent an email to set their password.
+  setPasswordEmailTemplateId: null
+
+  # The If of the Email Template that is used to send the verification emails to users. These emails
+  # are used to verify that a user’s email address is valid. If the verifyEmail field is true this field is required.
+  verificationEmailTemplateId: null
+
+  # The ID of the Email Template that is used to send the passwordless emails to users.
+  passwordlessEmailTemplateId: null

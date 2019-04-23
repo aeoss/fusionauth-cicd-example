@@ -1,0 +1,34 @@
+
+systemConfiguration:
+
+  reportTimezone: "America/Chicago"
+
+  logoutUrl: null
+
+  httpSessionMaxInactiveInterval: 3600
+
+  emailConfiguration:
+    <<: *email
+
+  externalIdentifierConfiguration:
+    <<: *external_identifier
+
+  failedAuthenticationConfiguration:
+    <<: *failed_auth
+
+  jwtConfiguration:
+    <<: *jwt_config
+
+  maximumPasswordAge:
+    <<: *maximum_password_age
+
+  minimumPasswordAge:
+    <<: *minimum_password_age
+
+  passwordValidationRules:
+    <<: *password_validation_rules
+
+  passwordEncryptionConfiguration:
+    <<: *password_encryption_configuration
+
+  

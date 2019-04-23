@@ -1,0 +1,34 @@
+map:
+
+  #
+  # Setup Email Templates
+  #
+  # This configuration item allows you to create (and keep updated) email templates
+  # for your FusionAuth instance. This can be useful for version-controlled email
+  # templates.
+  #
+  # This is an array of objects with the following keys:
+  #
+  # id: The unique ID of this item in FusionAuth.
+  # name: The name of the email template.
+  # template: The directory where templates are located (within /data/0__template/email)
+  # from:
+  #   name: The default from name
+  #   email: The default from email
+  # subject: The subject of the email
+  #
+  # The template directory expects a `template.html` and `template.text` file within
+  # the directory. These will be used for the HTML and text email formats respectively.
+  #
+  # This is an optional configuration item. This does not currently support localized
+  # email templates.
+  #
+  emails:
+  
+    - id: &passwordResetEmail d89b2163-f936-48a4-859f-1caccd8bc2a0
+      name: PW Reset
+      template: password_reset
+      from:
+        name: Team Lavra
+        email: no-reply@lavra.io
+      subject: Reset Your Password at Lavra

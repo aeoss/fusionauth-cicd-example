@@ -1,0 +1,7 @@
+
+stages:
+  - deploy
+
+deploy:
+  image: aeoss/fusionauth-cicd:latest
+  stage: deploy

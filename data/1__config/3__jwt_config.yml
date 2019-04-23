@@ -1,0 +1,48 @@
+
+jwtConfiguration: &jwt_config
+
+  #
+  # This value will always be true, even if set to false. The JWT configuration may not be disabled for
+  # the System Configuration.
+  #
+  enabled: true
+
+  # 
+  # The algorithm used to sign the JSON Web Token (JWT). The following available JSON Web Algorithms
+  # (JWA) as described in RFC 7518 are available.
+  # 
+  # ES256 - ECDSA using P-256 curve and SHA-256 AVAILABLE SINCE 1.4.0
+  # ES384 - ECDSA using P-384 curve and SHA-384 AVAILABLE SINCE 1.4.0
+  # ES512 - ECDSA using P-521 curve and SHA-512 AVAILABLE SINCE 1.4.0
+  # HS256 - HMAC using SHA-256
+  # HS384 - HMAC using SHA-384
+  # HS512 - HMAC using SHA-512
+  # RS256 - RSASSA-PKCS1-v1_5 using SHA-256
+  # RS384 - RSASSA-PKCS1-v1_5 using SHA-384
+  # RS512 - RSASSA-PKCS1-v1_5 using SHA-512
+  # 
+  algorithm: HS256
+
+  #
+  # The name or issuer of the JWT, this is generally something unique such as a fully qualified domain
+  # name.
+  #
+  issuer: acme
+
+  # 
+  # The length of time in minutes the JWT refresh token will live before it is expired and is not able
+  # to be exchanged for a JWT.
+  # 
+  refreshTokenTimeToLiveInMinutes: 43200
+
+  # 
+  # The length of time in seconds the JWT will live before it is expired. This value is used to calculate
+  # the exp (expiration) identity claim.
+  # 
+  timeToLiveInSeconds: 3600
+
+  # 
+  # The secret used when an HMAC based signing algorithm has been selected. This secret is used to sign
+  # and verify JWTs.
+  # 
+  secret: *E_CONFIG_JWT_SECRET
