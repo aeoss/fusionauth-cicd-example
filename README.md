@@ -18,7 +18,7 @@ via the `map.yml` file.
 ### `/data/1__config`
 
 This directory holds configuration files. It is recommended to use Yaml syntax to import the configuration
-as required by the `systemConfgiuration` object in FusionAuth. See the `config.yml` file for an example of
+as required by the `systemConfiguration` object in FusionAuth. See the `config.yml` file for an example of
 how this is done.
 
 The CI/CD container will read all yaml files within any directory to build this up. This also allows the config
@@ -53,8 +53,8 @@ If your FusionAuth is at `https://login.example.org`, provide that.
 
 #### `FUSIONAUTH_TOKEN`
 
-This is an API token with access to GET/POST/PATCH to the proper API endpoints. You'll need the ability
-to GET/POST/PATCH to email templates, and PATCH to system-configuration. If you don't use email templates you do
+This is an API token with access to GET/POST/PUT to the proper API endpoints. You'll need the ability
+to GET/POST/PUT to email templates, and PATCH to system-configuration. If you don't use email templates you do
 not need to provide access to that endpoint.
 
 ### Optional Env Variables
