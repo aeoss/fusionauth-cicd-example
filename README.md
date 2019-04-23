@@ -53,8 +53,9 @@ If your FusionAuth is at `https://login.example.org`, provide that.
 
 #### `FUSIONAUTH_TOKEN`
 
-This is an API token with access to GET/POST/PATCH to the proper API endpoints. Most notable, you'll need the ability
-to GET/POST/PATCH to email templates, and PATCH to system-configuration.
+This is an API token with access to GET/POST/PATCH to the proper API endpoints. You'll need the ability
+to GET/POST/PATCH to email templates, and PATCH to system-configuration. If you don't use email templates you do
+not need to provide access to that endpoint.
 
 ### Optional Env Variables
 
