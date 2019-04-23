@@ -53,12 +53,12 @@ If your FusionAuth is at `https://login.example.org`, provide that.
 
 #### `FUSIONAUTH_TOKEN`
 
+This is an API token with access to GET/POST/PATCH to the proper API endpoints. Most notable, you'll need the ability
+to GET/POST/PATCH to email templates, and PATCH to system-configuration.
+
 ### Optional Env Variables
 
 A few environment variables are optional for the CI/CD container. These are listed below.
-
-This is an API token with access to GET/POST/PATCH to the proper API endpoints. Most notable, you'll need the ability
-to GET/POST/PATCH to email templates, and PATCH to system-configuration.
 
 #### `DEBUG`
 
