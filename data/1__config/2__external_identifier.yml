@@ -1,44 +1,43 @@
-
 externalIdentifierConfiguration: &external_identifier
 
-  # 
+  #
   # The time in seconds until a OAuth authorization code in no longer valid to be exchanged for
   # an access token. This is essentially the time allowed between the start of an Authorization
   # request during the Authorization code grant and when you request an access token using this
   # authorization code on the Token endpoint.
-  #  
+  #
   # Value must be greater than 0 and less than or equal to 600.
-  # 
+  #
   authorizationGrantIdTimeToLiveInSeconds: 30
 
-  # 
+  #
   # The time in seconds until a change password Id is no longer valid and cannot be used by the
   # Change Password API. Value must be greater than 0.
-  # 
+  #
   changePasswordIdTimeToLiveInSeconds: 600
 
-  # 
+  #
   # The time in seconds until a email verification Id is no longer valid and cannot be used by the
   # Verify Email API. Value must be greater than 0.
-  # 
+  #
   emailVerificationIdTimeToLiveInSeconds: 86400
 
-  # 
+  #
   # The time in seconds until a one-time login code is no longer valid and cannot be used by
   # the Passwordless Login API. Value must be greater than 0.
-  # 
+  #
   oneTimePasswordTimeToLiveInSeconds: 60
 
-  # 
+  #
   # The time in seconds until a passwordless login email is no longer valid and cannot be used by
   # the Passwordless Login API. Value must be greater than 0.
-  # 
+  #
   passwordlessLoginTimeToLiveInSeconds: 180
 
-  # 
+  #
   # The time in seconds until a registration verification Id is no longer valid and cannot be used by
   # the Verify Registration API. Value must be greater than 0.
-  # 
+  #
   registrationVerificationIdTimeToLiveInSeconds: 86400
 
   #
@@ -47,10 +46,10 @@ externalIdentifierConfiguration: &external_identifier
   #
   setupPasswordIdTimeToLiveInSeconds: 86400
 
-  # 
+  #
   # The time in seconds until a two factor Id is no longer valid and cannot be used by the Two Factor
   # Login API. Value must be greater than 0.
-  # 
+  #
   twoFactorIdTimeToLiveInSeconds: 300
 
   #

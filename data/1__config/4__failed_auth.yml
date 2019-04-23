@@ -1,40 +1,39 @@
-
 failedAuthenticationConfiguration: &failed_auth
 
-  # 
+  #
   # The Id of the User Action that is applied when the threshold is reached for too many failed
   # authentication attempts.
-  # 
+  #
   userActionId: null
 
-  # 
+  #
   # The number of failed attempts considered to be too many. Once this threshold is reached the
   # specified User Action will be applied to the user for the duration specified.
-  # 
+  #
   tooManyAttempts: 4
 
-  # 
+  #
   # The length of time in seconds before the failed authentication count will be reset.
-  #  
+  #
   # For example, if tooManyAttempts is set to 5 and you fail to authenticate 4 times in a row,
   # waiting for the duration specified here will cause your fifth attempt to start back at 1.
-  # 
+  #
   resetCountInSeconds: 600
 
-  # 
+  #
   # The unit of time associated with a duration. The possible values are:
-  #  
+  # 
   # MINUTES
   # HOURS
   # DAYS
   # WEEKS
   # MONTHS
   # YEARS
-  # 
+  #
   actionDurationUnit: MINUTES
 
-  # 
+  #
   # The duration of the User Action. This value along with the actionDurationUnit
   # will be used to set the duration of the User Action.
-  # 
+  #
   actionDuration: 10
