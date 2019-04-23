@@ -1,7 +1,17 @@
 
 stages:
+  - lint
   - deploy
+
+lint:
+  stage: lint
+  image: sdesbure/yamllint
+  script:
+    - yamllint ./data/**/*.yml
 
 deploy:
   image: aeoss/fusionauth-cicd:latest
   stage: deploy
+  script:
+    - node /etc/fusion
+  when: on_success
