@@ -1,7 +1,7 @@
 
 # FusionAuth CI/CD Example
 
-This repository provides an example for how the CI/CD process with the [https://github.com/aeoss/fusionauth-cicd](`fusionauth-cicd`) container
+This repository provides an example for how the CI/CD process with the [`fusionauth-cicd`](https://github.com/aeoss/fusionauth-cicd) container
 works.
 
 An example has been provided for Gitlab CI. Other services should be configured similarly. Pull requests
