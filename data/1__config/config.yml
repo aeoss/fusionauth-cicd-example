@@ -1,4 +1,3 @@
-
 systemConfiguration:
 
   reportTimezone: "America/Chicago"
@@ -30,5 +29,3 @@ systemConfiguration:
 
   passwordEncryptionConfiguration:
     <<: *password_encryption_configuration
-
-  

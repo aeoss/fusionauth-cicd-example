@@ -22,7 +22,7 @@ failedAuthenticationConfiguration: &failed_auth
 
   #
   # The unit of time associated with a duration. The possible values are:
-  # 
+  #
   # MINUTES
   # HOURS
   # DAYS
