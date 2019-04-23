@@ -44,4 +44,4 @@ jwtConfiguration: &jwt_config
   # The secret used when an HMAC based signing algorithm has been selected. This secret is used to sign
   # and verify JWTs.
   #
-  secret: *E_CONFIG_JWT_SECRET
+  secret: *E_JWT_SECRET
