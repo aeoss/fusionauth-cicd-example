@@ -63,6 +63,6 @@ A few environment variables are optional for the CI/CD container. These are list
 
 #### `DEBUG`
 
-This environment variable expects a boolean value of `true` or `false`. This variable controls whether
-debugging output is enabled or not. If enabled, the CI/CD container will output the full JSON object built by
-the Yaml processor. This is useful for seeing what will be PATCH'd to your FusionAuth instance's API.
+This environment variable expects a boolean value. This variable controls whether debugging output is enabled
+or not. If enabled, the CI/CD container will output the full JSON object built by the Yaml processor. This is
+useful for seeing what will be PATCH'd to your FusionAuth instance's API.
